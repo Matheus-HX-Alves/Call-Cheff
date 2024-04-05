@@ -18,3 +18,9 @@ Site criado utilizando Node.js
 <ul>
 <li>Nodemon => Reinicia o servidor sempre que realizar alguma mudança no codigo.</li>
 </ul>
+
+<h3>Apis Usadas:</h3>
+
+<ul>
+<li>API Distance Matrix => Serviço que aceita uma solicitação HTTPS contendo origens e destinos para um determinado meio de transporte. Para cada combinação de origem e destino, ela retorna a distância e a duração do percurso.</li>
+</ul>

@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const bodyParse = require("body-parser");
 const connection = require("./database/database");
+const users = require("./database/Users");
 
 // Connection
 app.listen(8080, () => {console.log("Sevidor Iniciado")})
