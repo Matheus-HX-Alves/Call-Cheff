@@ -10,7 +10,6 @@ Site criado utilizando Node.js
 <li>Sequelize => Consegue conectar o codigo com o bancos de dados e manipular.</li>
 <li>tedious => Necessario para o Sequelize conectar com SQL SERVER.</li>
 <li>Slugify => Transforma uma String normal em uma Slug.</li>
-<li>Tinymce => Deixa as textareas melhores.</li>
 <li>Bcryptjs => Armazena senhas de forma segura.</li>
 </ul>
 
