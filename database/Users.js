@@ -1,10 +1,9 @@
 const sequelize = require("sequelize");
 const connection = require("./database");
-const { name } = require("ejs");
 
 const Users = connection.define('Users',{
     Email:{
-        email: sequelize.STRING,
+        type: sequelize.STRING,
         allowNull: false
     },
     Password:{
@@ -24,7 +23,7 @@ const Users = connection.define('Users',{
         allowNull: false
     },
     Birthday:{
-        type: sequelize.DATE,
+        type: sequelize.DATEONLY,
         allowNull: false
     },
     Cep:{

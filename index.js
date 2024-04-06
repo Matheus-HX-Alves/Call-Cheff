@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const bodyParse = require("body-parser");
 const connection = require("./database/database");
-const users = require("./database/Users");
+
 
 // Connection
 app.listen(8080, () => {console.log("Sevidor Iniciado")})
@@ -11,14 +11,12 @@ app.listen(8080, () => {console.log("Sevidor Iniciado")})
 app.use(bodyParse.urlencoded({extended: false}));
 app.use(bodyParse.json());
 
-/*
+
 // Linkando a categoria com o index
-const categoriesController = require("./categories/CategoriesController");
-const articlesController = require("./articles/ArticlesController");
-const userController = require("./users/UserController");
+const cadastroController = require("./database/CadastroController");
 // Fazendo o sistema usar as rotas da const indicada | "/" é o prefixo que sera usando antes de qualquer outro da categoria 
-app.use("/",categoriesController,articlesController,userController);
-*/
+app.use("/",cadastroController);
+
 
 // View engine
 app.set('view engine','ejs');
@@ -32,3 +30,5 @@ connection.authenticate().then(() =>{
     }).catch((error) =>{
         console.log(error);
     })
+
+    
