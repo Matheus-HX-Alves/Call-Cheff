@@ -11,6 +11,7 @@ Site criado utilizando Node.js
 <li>tedious => Necessario para o Sequelize conectar com SQL SERVER.</li>
 <li>Slugify => Transforma uma String normal em uma Slug.</li>
 <li>Bcryptjs => Armazena senhas de forma segura.</li>
+<li>Nodemailer => Permite envio de E-mail com facilidade </li>
 </ul>
 
 <h3>FrameWorks Usados:</h3>

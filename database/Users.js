@@ -9,7 +9,8 @@ const Users = connection.define('Users',{
     Password:{
         type: sequelize.STRING,
         allowNull: false
-    },
+    }
+    /*
     Name:{
         type: sequelize.STRING,
         allowNull: false
@@ -50,6 +51,7 @@ const Users = connection.define('Users',{
         type: sequelize.INTEGER,
         allowNull: false
     },
+    */
 })
 
 Users.sync({force: false}).then(()=>{});
